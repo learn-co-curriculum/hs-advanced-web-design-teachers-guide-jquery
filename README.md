@@ -1,4 +1,3 @@
-
 ###SWABATs
 
 ####Arrays
@@ -26,7 +25,9 @@
 + build their own regular expressions
 
 ###Lesson Plan
-+ <b>ARRAYS</b> - Let’s start by learning about arrays. We’ll do this by making our own arrays.
+
+####Arrays
++ Let’s start by learning about arrays. We’ll do this by making our own arrays.
 + Think about an array as an ordered list that can be visualized as a two-column table where the left column is the index (or the order) and the right column is the thing you’re listing (Draw on board, using one of the students’ examples):
 <img src= "https://s3.amazonaws.com/after-school-assets/advanced_jquery1.png">
 + Notice that the index starts at 0. This is a quirk about data structures in computer science that you just have to memorize. The first item in an array is always 0, and it increments by one.
@@ -46,8 +47,11 @@
   + names.push(“Alfred”) will add an item with the contents of the argument to the end of the array it is called on. 
   + names.pop() will remove the last item in an array.
 + Here are some other cool methods: .length(), .sort(), .splice(), split().
-+ <b>Mini-Lab: Manipulating arrays (start with array and then have 10 instructions, what does array look like at the end?)
++ <b>[Mini Lab](https://learn.co/admin/lessons/5206): Manipulating arrays (start with array and then have 10 instructions, what does array look like at the end?)
 + Answer: ["Peru", "Laos", "Chad", "Cuba", "Togo", "Iraq", "Iran", "Mali", "Oman", "Fiji"] </b>
+
+
+####Loops
 + Let’s make a new array but use numbers now. Get an example set from a student and make an integer based array. <b>Ask a few review questions (add a number? index? etc…)</b>
 + Ok, what if we want to do something to each number. Like add one to each number. We could do it manually: numbers[0] = numbers[0] +1, etc. but that would take forever
 + A better way to do this is to set up a little machine with instructions on how to iterate (go through) every number in the array and do something specific to each one.
@@ -77,6 +81,8 @@ for (starting condition; ending condition; step for moving our machine forward) 
   + Now create a function called myFavorites();
   + This function should take in an array of favorites and for each favorite it should alert to the screen something like “The Shawshank Redemption? That is my favorite too!”
 + Now create a new array of your favorite songs. Try calling the myFavorites() function with your favorite songs array.
+
+####jQuery
 + Understanding how to iterate through a JS array with a for loop is important and useful, but there is an even easier way to iterate through an array using the jQuery .each method.
 + We’re going to do a lot more jQuery review today but for now we’ll just walk through how to use .each like this:
   + $(numbers).each(function(i, value){
@@ -88,7 +94,7 @@ for (starting condition; ending condition; step for moving our machine forward) 
 + You can see that the function that goes into .each has two arguments - the i stands for index and the value is the actual thing in the array. Go ahead and try using .each to iterate through your numbers array.
 + Now try recreating your myFavorites function with jQuery .each.
 
-<b>jQuery</b>
+####More jQuery
 
 + Now that you’ve gotten back into the swing of things with JavaScript it’s time to get reacquainted with Query.
 + BUT before we do that let’s do a quick review of working the DOM. <b>Does anyone remember what DOM stands for?</b> This stands for document object model and it is a structural representation of our HTML in tree form. Like this:

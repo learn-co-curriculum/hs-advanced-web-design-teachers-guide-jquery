@@ -3,40 +3,50 @@
 ## SWBATs
 
 + Understand how jQuery is just a *library* of JavaScript functions and that anything jQuery does you can do with plain JavaScript
-+ Use jQuery to iterate through an array or collection of HTML elements
 + Use jQuery and CSS selectors to access HTML elements
 + Create, Read, Update, and Delete (CRUD) HTML elements using jQuery
 + Attach jQuery event handlers (like 'click') to HTML elements
++ Use jQuery to iterate through an array or collection of HTML elements
 
 ## Lesson Plan
 
 ### Concept
 
+> jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+- jquery.com
 
-####jQuery
-+ Understanding how to iterate through a JS array with a for loop is important and useful, but there is an even easier way to iterate through an array using the jQuery .each method.
-+ We’re going to do a lot more jQuery review today but for now we’ll just walk through how to use .each like this:
-  + $(numbers).each(function(i, value){
-    +  alert(value+1);      
-  + });
-+ You can see that we start with a $ sign - which is the jQuery object and kind of how we say “Hey, jQuery! Got something for you.” And the thing that we have - numbers - goes in parentheses - kind of like an argument - and we are going to call .each on this numbers array. 
-+ .each does exactly what you think it would do - it takes out each item in the array and it does whatever we tell it to do with each one.
-+ The way that we tell it what to do is by feeding the .each method a function as an argument. You might remember this from Intro to Web Design class - arguments can be functions. We do this a lot with jQuery.
-+ You can see that the function that goes into .each has two arguments - the i stands for index and the value is the actual thing in the array. Go ahead and try using .each to iterate through your numbers array.
-+ Now try recreating your myFavorites function with jQuery .each.
+In plainer English, jQuery is simply a library that makes things that are hard/annoying in JavaScript, like finding elements, really easy. It allows us to add/remove/change HTML and CSS with ease.
 
-####More jQuery
 
-+ Now that you’ve gotten back into the swing of things with JavaScript it’s time to get reacquainted with Query.
-+ BUT before we do that let’s do a quick review of working the DOM. <b>Does anyone remember what DOM stands for?</b> This stands for document object model and it is a structural representation of our HTML in tree form. Like this:
+### DOM
+
+Before we dive into jQuery it makes sense to do a quick review of working the DOM. 
+*Does anyone remember what DOM stands for?*
+This stands for *document object model* and it is a structural representation of our HTML in tree form. Like this:
 <img src="https://s3.amazonaws.com/after-school-assets/advanced_jquery2.png">
-+ This model enables us to modify the content and visual presentation on our HTML document with JavaScript and jQuery.
-+ What kind of things can we do with JS + DOM.
-  + Add/remove/hide/show HTML elements in the page.
-  + Add/remove/change HTML attributes.
-  + Add/remove/change  CSS styles.
-  + Listen for key presses or mouse events upon Elements
-  + Create events in the page.
+This model enables us to easily find elements and change their content, styles, and structure.
+
+What kind of things can we do with JS/jQuery + DOM.
++ Add/remove/hide/show HTML elements in the page.
++ Add/remove/change HTML attributes.
++ Add/remove/change CSS styles.
++ Listen for key presses or mouse events on Elements
++ Create events in the page.
+
+### jQuery Installation
+
+jQuery is a JavaScript software library, which means that it's simply a JS text file written by a bunch of other developers. To use it we simply need to make sure the browser knows where to find that text file.  We do that by including the link to the text file in the `<head>` tag of our code.
+
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+```
+
+ProTip: Have your students navigate to `https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` to see the actual jquery file that is being used. Notice that this file has `.min`, that means its 'minified' js (all the whitespace has been removed to make the file smaller).  Now have them go to `https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js` - This file should make more sense!
+
+
+
+
+
 + We can select elements on the page like this:
   + $("p");
 + And manipulate content like this:
@@ -101,3 +111,15 @@
       + // your app code goes here.
     + });
 + We’re going to get A LOT more practice with this in the coming days. Today we’re going to wrap up with a fun little lab to help you build and publish your own chrome extension lab.
+
+####jQuery Array Traversal
++ Understanding how to iterate through a JS array with a for loop is important and useful, but there is an even easier way to iterate through an array using the jQuery .each method.
++ We’re going to do a lot more jQuery review today but for now we’ll just walk through how to use .each like this:
+  + $(numbers).each(function(i, value){
+    +  alert(value+1);      
+  + });
++ You can see that we start with a $ sign - which is the jQuery object and kind of how we say “Hey, jQuery! Got something for you.” And the thing that we have - numbers - goes in parentheses - kind of like an argument - and we are going to call .each on this numbers array. 
++ .each does exactly what you think it would do - it takes out each item in the array and it does whatever we tell it to do with each one.
++ The way that we tell it what to do is by feeding the .each method a function as an argument. You might remember this from Intro to Web Design class - arguments can be functions. We do this a lot with jQuery.
++ You can see that the function that goes into .each has two arguments - the i stands for index and the value is the actual thing in the array. Go ahead and try using .each to iterate through your numbers array.
++ Now try recreating your myFavorites function with jQuery .each.

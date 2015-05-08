@@ -46,7 +46,7 @@ What kind of things can we do with JS/jQuery + DOM.
 `<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"> <\/script>')</script>`
 
-> ProTip: Have your students navigate to `https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` to see the actual jquery file that is being used. Notice that this file has `.min`, that means its 'minified' js (all the whitespace has been removed to make the file smaller).  Now have them go to `https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js` - This file should make more sense!
+> ProTip: Have your students navigate to `https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` in their browser to see the actual jQuery file that is being used. Notice that this file has `.min`, that means its 'minified' js (all the whitespace has been removed to make the file smaller).  Now have them go to `https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js` - This file should make more sense!
 
 #### Selectors
 
@@ -63,16 +63,14 @@ jQuery uses the same selector syntax. So, getting the HTML `<p class="red-cls">`
 
 `jQuery("p.red-cls");` or `$("p.red-cls")`
 
-The `$` symbol is just shorthand for `jQuery`. The do the exact same thing.
+The `$` symbol is just shorthand for `jQuery`. They both get the jQuery object.
 
-#### Manipulation
+#### Manipulation and Syntax
 
 We manipulate content like this: 
 ```
 $("#foo").text("hello world"); //this sets the text in #foo div to “hello world”
 ```
-
-#### syntax
 
 Here is an example of the syntax for using a jQuery method
 `$(selector).method(parameters);`

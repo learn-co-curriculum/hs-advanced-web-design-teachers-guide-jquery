@@ -136,7 +136,7 @@ You probably already remember how jQuery helps to simplify your life. Let’s di
 + Easy extending methods. Coders can create and share their own custom plugins easily.
 + Familiar DOM selectors. If you already know CSS you’re a step ahead as jQuery uses all our familiar CSS selector statements.
 
-#### setup in HTML
+#### Setup in HTML
 
 Set up steps for using jQuery in your websites:
 + Include link to jQuery core library:

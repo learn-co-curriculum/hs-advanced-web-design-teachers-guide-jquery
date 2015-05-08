@@ -1,16 +1,17 @@
-###SWBATs
+# jQuery
 
-####jQuery
-+ understand the JS behind jQuery and how the same thing can be done with either
-+ use jQuery grep to filter items in an array
-+ know where to look for jQuery resources
-+ use jQuery .each function to iterate
-+ make custom HTML5 data attributes and use the jQuery data method to retrieve (one argument) and set values (two arguments)
-+ retrieve and set values from forms using the jQuery .val method
-+ validate form input with common validation functions and regex
-+ build their own regular expressions
+## SWBATs
 
-###Lesson Plan
++ Understand how jQuery is just a *library* of JavaScript functions and that anything jQuery does you can do with plain JavaScript
++ Use jQuery to iterate through an array or collection of HTML elements
++ Use jQuery and CSS selectors to access HTML elements
++ Create, Read, Update, and Delete (CRUD) HTML elements using jQuery
++ Attach jQuery event handlers (like 'click') to HTML elements
+
+## Lesson Plan
+
+### Concept
+
 
 ####jQuery
 + Understanding how to iterate through a JS array with a for loop is important and useful, but there is an even easier way to iterate through an array using the jQuery .each method.

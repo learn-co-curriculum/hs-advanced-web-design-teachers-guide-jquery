@@ -75,9 +75,9 @@ $("#foo").text("hello world"); //this sets the text in #foo div to “hello worl
 Here is an example of the syntax for using a jQuery method
 `$(selector).method(parameters);`
 + `$` refers to the jQuery object.
-+ 'selector' asks jQuery to go out into the DOM (Document Object Model) web page and select an element(s). In jQuery we can use all of the familiar selectors we use in CSS. Yay!
-+ 'method' these are various actions and commands attached to the jQuery object that allow us to do things like fade elements in an out or change the content of the DOM and much much more.
-+ 'parameters' are options we can set for each method.
++ `selector` asks jQuery to go out into the DOM (Document Object Model) web page and select an element(s). In jQuery we can use all of the familiar selectors we use in CSS. Yay!
++ `method` these are various actions and commands attached to the jQuery object that allow us to do things like fade elements in an out or change the content of the DOM and much much more.
++ `parameters` are options we can set for each method.
 + An example of real code:
   + `$('h1').css({'background':'yellow'})`;
   + `$` refers to the jQuery object.

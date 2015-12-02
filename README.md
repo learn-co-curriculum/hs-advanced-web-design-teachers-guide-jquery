@@ -151,3 +151,5 @@ Set up steps for using jQuery in your websites:
 ```
 
 We’re going to get A LOT more practice with this in the coming days. Today we’re going to wrap up with a fun little lab to help you build and publish your own chrome extension lab.
+
+<a href='https://learn.co/lessons/hs-advanced-web-design-teachers-guide-jquery' data-visibility='hidden'>View this lesson on Learn.co</a>
